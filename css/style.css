@@ -202,7 +202,7 @@ ul li a{
 #contato{
     display: flex;
     justify-content: center;
-    background-image: url('/img/call-to-action.jpg');
+    background-image: url('img/call-to-action.jpg');
     background-size: 100%;
     background-position: center;
     height: 400px;
