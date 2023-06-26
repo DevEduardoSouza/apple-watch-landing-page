@@ -3,7 +3,7 @@
 Este repositório contém um projeto de uma landing page para um Apple Watch fictício, desenvolvido para fins educativos. Utilizando HTML, CSS e JavaScript, o projeto tem como objetivo simular a apresentação e detalhamento do produto de forma atraente e responsiva.
 
 ![Imagem](img/img_projeto.png)
-<a href="https://apple-watch-landing-page.netlify.app">Link</a>
+<a href="https://landing-page-apple-watch.netlify.app">Link</a>
 
 ## Descrição
 
