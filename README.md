@@ -38,10 +38,3 @@ Este projeto foi desenvolvido com o propósito educativo e, portanto, não são 
 ## Licença
 
 Este projeto é apenas para fins educativos e não possui uma licença específica.
-
-## Contato
-
-Se você tiver alguma dúvida ou sugestão relacionada a esta landing page do Apple Watch fictício em HTML, CSS e JS, sinta-se à vontade para entrar em contato comigo através dos meus dados de contato abaixo:
-
-- Nome: [Seu Nome]
-- E-mail: [Seu E-mail]
