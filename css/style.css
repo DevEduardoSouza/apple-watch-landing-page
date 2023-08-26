@@ -78,7 +78,7 @@ header .menu .btn-mobile i:hover{
     color: var(--color-styled);
 }
 main{
-  
+  position: relative;
 }
 
 /* Product */
@@ -248,6 +248,7 @@ main{
 .contact-box .contact-text p{
     font-weight: 300;
     font-size: 2rem;
+    text-align: center;
 }
 .contact-form-box{
     max-width: 400px;
@@ -296,6 +297,7 @@ border-radius: 0%;
     color: var(--font-color-title);
     line-height: 3rem;
     font-size: 1.8rem;
+    text-align: justify;
 }
 .review-profile{
     margin-top: 50px;
@@ -322,6 +324,29 @@ border-radius: 0%;
 }
 /* END Reviews */
 
+/* Whatsapp */
+#container-btn-whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+#container-btn-whatsapp .content-whatsapp{
+    padding: 10px;
+    background-color: #25D366;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#container-btn-whatsapp .content-whatsapp a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #F4F4F4;
+}
+#container-btn-whatsapp .content-whatsapp i{
+}
+#container-btn-whatsapp .content-whatsapp:hover{
+    opacity: .9;
+}
+/* END Whatsapp */
 
 /* Footer */
 footer {
@@ -432,7 +457,10 @@ footer .menu a:hover {
 }
 @media(max-width: 600px){
     html,body{
-        font-size: 52%;
+        font-size: 56%;
+    }
+    h2{
+        font-size: 3rem !important;
     }
     header .menu nav .btn-mobile{ 
         display: block;
