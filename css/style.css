@@ -7,6 +7,9 @@
     --font-color-title: #3b4045;
     --font-main: 'Josefin Sans', sans-serif;
 }
+html,body{
+    font-size: 62.5%;
+}
 body{
     margin: 0%;
     padding: 0%;
@@ -19,7 +22,7 @@ body{
     justify-content: space-between;
 }
 .hide{
-    display: none;
+    display: none !important;
 }
 h2{
     color: var(--font-color-title);
@@ -36,6 +39,7 @@ header{
 }
 header .logo h1 {
     font-weight: 300;
+    font-size: 5rem;
 }
 header .logo a{
     text-decoration: none;
@@ -50,13 +54,14 @@ header .menu nav ul{
     list-style: none;
     display: flex;
 }
-header .menu nav a{
+header .menu nav a{ 
     display: block;
     padding: 20px;
     text-decoration: none;
     color: var(--font-color);
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 1.5rem;
 }
 header .menu nav a:hover{
     color: var(--color-styled);
@@ -75,6 +80,7 @@ header .menu .btn-mobile i:hover{
 main{
   
 }
+
 /* Product */
 #product{
     display: flex;
@@ -91,19 +97,19 @@ main{
     max-width: 550px;
 }
 #product .product-details h2{
-    font-size: 62px;
+    font-size: 5rem;
     margin-bottom: 0px;
 }
 #product .product-details p{
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     font-weight: 300;
 }
 .btn-main{
     padding: 15px 40px;
     border-radius: 30px;
     background-color: var(--color-styled);
-    font-size: 1.1rem;
+    font-size: 2rem;
     color: white;
     border: none;
     margin-top: 20px;
@@ -122,7 +128,7 @@ main{
 }
 #details-features h2{
     text-align: center;
-    font-size: 40px;
+    font-size: 5rem;
     padding-bottom: 70px;
 }
 #details-features #features{
@@ -136,6 +142,8 @@ main{
 #details-features .box-features p{
     max-width: 350px;
     font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
 #details-features .box-features{
     margin-bottom: 40px;
@@ -143,7 +151,7 @@ main{
 #details-features .title-features h3{
     margin-bottom: 0px;
     margin-top: 4px;
-    font-size: 20px;
+    font-size: 2.5rem;
 }
 /* END Details Features */
 
@@ -180,20 +188,20 @@ main{
 }
 .reason h2{
     text-align: center;
-    font-size: 40px;
+    font-size: 5rem;
 }
 .apple-details h2{
     text-align: left;
 }
 .description h2{
-    font-size: 32px;
-    line-height: 50px;
+    font-size: 4rem;
+    line-height: 5.5rem;
     margin: 0;
 }
 .description p{
-    font-size: 18px;
+    font-size: 2rem;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 3rem;
 }
 .designed-img{
     width: 50%;
@@ -234,11 +242,12 @@ main{
 }
 .contact-box .contact-text h2{
     text-align: center;
-    font-size: 32px;
+    font-size: 3rem;
+    color: #fff;
 }
 .contact-box .contact-text p{
     font-weight: 300;
-    font-size: 18px;
+    font-size: 2rem;
 }
 .contact-form-box{
     max-width: 400px;
@@ -256,7 +265,7 @@ main{
 border: none;
 width: 100px;
 height: 50px;
-font-size: 18px;
+font-size: 2rem;
 }
 .subscribe-btn{
 margin: 0;
@@ -275,7 +284,7 @@ border-radius: 0%;
 #reviews h2{
     text-align: center;
     margin-top: 100px;
-    font-size: 40px;
+    font-size: 4rem;
 }
 .review-container{
     display: flex;
@@ -285,7 +294,8 @@ border-radius: 0%;
 .review-box{
     margin: 25px 25px;
     color: var(--font-color-title);
-    line-height: 30px;
+    line-height: 3rem;
+    font-size: 1.8rem;
 }
 .review-profile{
     margin-top: 50px;
@@ -299,7 +309,7 @@ border-radius: 0%;
     border-radius: 50%;
 }
 .profile-name span{
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: 800;
 }
 .profile-job{
@@ -327,7 +337,7 @@ footer .footer-navbar {
 footer .logo a {
     text-decoration: none;
     color: var(--font-color);
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
 }
 footer .menu ul {
@@ -340,7 +350,7 @@ footer .menu li {
 footer .menu a {
     text-decoration: none;
     color: var(--font-color);
-    font-size: 16px;
+    font-size: 1.5rem;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
@@ -355,6 +365,8 @@ footer .menu a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        
     }
     .reason .apple{
         padding: 20px;
@@ -367,7 +379,6 @@ footer .menu a:hover {
         margin: auto;
         text-align: center;
     }
-
     .review-list{
         flex-direction: column;
         width: 90%;
@@ -378,6 +389,7 @@ footer .menu a:hover {
         flex-direction: column;
         align-items: center;
         gap: 3rem;
+        margin-bottom: 20%;
     }
     #details-features h2{
         margin-top: 5rem;
@@ -394,20 +406,6 @@ footer .menu a:hover {
     .btn-main {
         display: block;
         margin: auto;
-    }
-
-    .product-details h2 {
-        font-size: 50px;
-    }
-    .description h2 {
-        font-size: 20px;
-    }
-    .description p {
-        font-size: 17px;
-        line-height: 24px;
-    }
-    .description h2 {
-        line-height: 25px;
     }
     .container-features{
         flex-direction: column;
@@ -433,15 +431,15 @@ footer .menu a:hover {
 
 }
 @media(max-width: 600px){
-    header .menu nav ul :not(.btn-mobile){
-        display: none;
+    html,body{
+        font-size: 52%;
     }
-    header .menu .btn-mobile{ 
+    header .menu nav .btn-mobile{ 
         display: block;
     }
-    header  .menu nav ul{
+    header .container .menu nav ul{
+        display: flex;
         flex-direction: column;
-        /* display: flex; */
         position: absolute;
         left: 0;
         background-color: white;
@@ -461,11 +459,11 @@ footer .menu a:hover {
         flex-direction: column;
         gap: 2rem;
     }
-    #product .product-details h2 {
-        font-size: 50px;
-    }
     .designed-img img {
         width: 70%;
+    }
+    h2{
+        text-align: center !important;
     }
 }
 /* END Responsividade */

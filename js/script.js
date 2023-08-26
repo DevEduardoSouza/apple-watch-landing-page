@@ -4,14 +4,9 @@ const html = {
     },
 }
 
+const btnMobile = html.getElemente('.btn-mobile');
+const menu = html.getElemente('header .menu  ul');
 
-
-document.querySelector(".menuMobile").addEventListener("click", function () {
-    if(document.querySelector(".menu nav ul").style.display == 'flex'){
-        document.querySelector(".menu nav ul").style.display = 'none';
-        
-    } else {
-        document.querySelector(".menu nav ul").style.display = 'flex';
-        // document.querySelector("header").style.backgroundColor = '#2f2f2f';
-    }
+btnMobile.addEventListener('click', ()=>{
+    menu.classList.toggle('hide');
 });
