@@ -1,150 +1,166 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+/* ------{Configurações gerais}----- */
+:root{
+    --color-styled: #f9a743;
+    --font-color: #444444;
+    --font-color-title: #3b4045;
+    --font-main: 'Josefin Sans', sans-serif;
+}
 body{
     margin: 0%;
     padding: 0%;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font-main);
     -webkit-tap-highlight-color: transparent;
 }
-.conteiner{
+.container{
     width: 1200px;
     display: flex;
     justify-content: space-between;
-    /* background-color: red; */
 }
+.hide{
+    display: none;
+}
+h2{
+    color: var(--font-color-title);
+}
+a{
+    text-decoration: none;
+}
+
+/* ------{Header}----- */
 header{
     height: 120px;
     display: flex;
     justify-content: center;
 }
-.logo h1 {
+header .logo h1 {
     font-weight: 300;
 }
-.logo a{
+header .logo a{
     text-decoration: none;
     color: #221919;
 }
-.logo, .menu {
+header .logo, .menu {
     display: flex;
     align-items: center;
     margin-left: 20px;
-    
 }
-.menu nav ul{
+header .menu nav ul{
     list-style: none;
     display: flex;
-    
 }
-ul li a{
+header .menu nav a{
     display: block;
     padding: 20px;
     text-decoration: none;
-    color: #444444;
+    color: var(--font-color);
     text-transform: uppercase;
     font-weight: 700;
 }
-/* BTN mobile */
-
-.menuMobile{
+header .menu nav a:hover{
+    color: var(--color-styled);
+}
+header .menu .btn-mobile{
     display: none;
-    width: 40px;
-    height: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-right: 10px;
     cursor: pointer;
-    margin-right: 20px;
 }
-.mm_line{
-    height: 3px;
-    background-color: black;
+header .menu .btn-mobile i{
+    font-size: 2rem;
 }
-
-/* Produto */
-#produto{
+header .menu .btn-mobile i:hover{
+    color: var(--color-styled);
+}
+main{
+    border: 2px solid red;
+}
+/* Product */
+#product{
     display: flex;
     justify-content: center;
     /* background-color: red; */
 }
-.prd{
+.product-container{
     justify-content: space-around;
 }
-.produto-img{
+#product .product-img {
+    animation: moveFromLeft .8s ease-in-out forwards;
 }
-.produto-text{
+#product .product-details{
     max-width: 550px;
-    color: #3b4045;
 }
-.produto-text h2{
+#product .product-details h2{
     font-size: 62px;
     margin-bottom: 0px;
 }
-.produto-text p{
-    font-size: 20px;
-    line-height: 27px;
+#product .product-details p{
+    font-size: 1.2rem;
+    line-height: 2rem;
     font-weight: 300;
 }
-.btn_main{
+.btn-main{
     padding: 15px 40px;
     border-radius: 30px;
-    background-color: #f9a743;
-    font-size: 18px;
+    background-color: var(--color-styled);
+    font-size: 1.1rem;
     color: white;
     border: none;
     margin-top: 20px;
     cursor: pointer;
 }
-.btn_main:hover{
-    background-color: #f8951b;
+.btn-main:hover{
     transition: .5s;
+    opacity: .9;
+    transform: scale(1.1,1.1);
 }
-/* END produto */
+/* END product */
 
-
-#recursos_conteudo{
-    padding: 100px;
+/* Details Features */
+#details-features{
+    padding: 50px;
 }
-#recursos_conteudo h2{
+#details-features h2{
     text-align: center;
     font-size: 40px;
     padding-bottom: 70px;
 }
-#recursos{
+#details-features #features{
     display: flex;
     justify-content: center;
-    /* background-color: red; */
 }
-.re{
+.container-features{
     justify-content: space-around;
+    margin: 0 auto;
 }
-.box_recursos p{
+#details-features .box-features p{
     max-width: 350px;
     font-weight: 300;
 }
-.box_recursos{
+#details-features .box-features{
     margin-bottom: 40px;
 }
-.titulo_r h3{
+#details-features .title-features h3{
     margin-bottom: 0px;
     margin-top: 4px;
     font-size: 20px;
-    color: #3b4045;
 }
+/* END Details Features */
 
-/*  */
-#designed{
-    background: #f9a743;
+
+/* Details designed */
+#details-designed{
+    background-color: var(--color-styled);
 }
-
-#designed, .apple{
+#details-designed, .apple{
     display: flex;
     justify-content: center;    
     padding: 90px;
 }
-.des{
+.container-designed{
     justify-content: space-around;
-    
 }
-.designed_text{
+.description{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -152,27 +168,29 @@ ul li a{
     justify-content: center;
     color: white;
 }
-.apl{
+/* END Details designed */
+
+/* Apple-details */
+.apple-details{
     color: #221919;
     position: relative;
-    
 }
-.motivo{
+.reason{
     margin-top: 100px;
 }
-.motivo h2{
+.reason h2{
     text-align: center;
     font-size: 40px;
 }
-.apl h2{
+.apple-details h2{
     text-align: left;
 }
-.designed_text h2{
+.description h2{
     font-size: 32px;
     line-height: 50px;
     margin: 0;
 }
-.designed_text p{
+.description p{
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
@@ -183,23 +201,23 @@ ul li a{
 .designed-img img{
     display: block;
     margin: auto;
-
 }
-.btn_apple{
+.apple-button{
     width: 100%;
-    /* background-color: red; */
 }
-.desin{
+.design-btn{
    display: inline-block;
 }
-.two{
+.container-apple-bottom{
     flex-direction: row-reverse;
 }
-.two_ap{
+.apple-bottom{
     padding-top: 0px;
 }
+/* Apple-details */
 
-#contato{
+/* Contact */
+#contact{
     display: flex;
     justify-content: center;
     background-image: url('../img/call-to-action.jpg');
@@ -208,175 +226,218 @@ ul li a{
     height: 400px;
     /* filter: brightness(50%); */
 }
-.contatos{
+.contact-box{
     color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.text h2{
+.contact-box .contact-text h2{
     text-align: center;
     font-size: 32px;
 }
-.text p{
+.contact-box .contact-text p{
     font-weight: 300;
     font-size: 18px;
 }
-.caixa_contato{
+.contact-form-box{
     max-width: 400px;
 }
-.caixa_contato input{
+.contact-form-box form{
+ display: flex;
+}
+.contact-form-box input{
     border: none;
     height: 50px;
     padding: 0px;
     padding-left: 20px;
 }
- .caixa_contato button{
-    border: none;
-    width: 100px;
-    height: 50px;
-    font-size: 18px;
- }
+.contact-form-box button{
+border: none;
+width: 100px;
+height: 50px;
+font-size: 18px;
+}
+.subscribe-btn{
+margin: 0;
+padding: 0;
+border-radius: 0%;
+}
+/* END Contact */
 
- .cont{
-    margin: 0;
-    padding: 0;
-    border-radius: 0%;
- }
- form{
-    display: flex;
- }
-
- #review h2{
+/* Reviews */
+.review-list{ 
+    margin: auto;
+    /* flex-wrap: wrap;
+    width: 90%;
+    border: 1px solid; */
+}
+#reviews h2{
     text-align: center;
     margin-top: 100px;
     font-size: 40px;
- }
- .conteinerReview{
+}
+.review-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
- }
- .box_re{
+}
+.review-box{
     margin: 25px 25px;
-    color: #3b4045;
+    color: var(--font-color-title);
     line-height: 30px;
- }
- .perfil{
+}
+.review-profile{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
- }
- .perfil_re img{
+}
+.profile-image img{
     width: 80px;
     border-radius: 50%;
- }
- .name span{
+}
+.profile-name span{
     font-size: 25px;
     font-weight: 800;
- }
- .job{
+}
+.profile-job{
     font-weight: 300;
- }
- #review .rewv{
+}
+#reviews .review-button{
     display: block;
     margin: auto;
     margin-top: 80px;
- }
-footer{
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    background-color: #f4f4f4;
-    height: 200px;
 }
-.nav_bar_footer{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.rightRecursos{
-    margin-left: 10px;
-}
+/* END Reviews */
 
-@media(max-width: 768px){
-   
-    .rightRecursos{
-        margin-left: 0px;
-    }
-    .prd {
-        flex-direction: column-reverse;
+
+/* Footer */
+footer {
+    background-color:var(--font-color-title);
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 10rem ;
+}
+footer .footer-navbar {
+    width: 90%;
+    margin: auto;
+}
+footer .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+footer .menu ul {
+    list-style: none;
+    display: flex;
+}
+footer .menu li {
+    margin-right: 20px;
+}
+footer .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+footer .menu a:hover {
+    color: var(--color-styled);
+}
+/* END Footer */
+
+/* Responsividade */
+@media(max-width: 900px){
+    .reason .container{
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 50px;
     }
-    .btn_main {
+    .reason .apple{
+        padding: 20px;
+    }
+    .reason .apple .description {
+        width: 80%;
+        margin: 1rem 0;
+    }
+    .reason .apple-button{
+        margin: auto;
+        text-align: center;
+    }
+
+    .review-list{
+        flex-direction: column;
+        width: 90%;
+    }
+}
+@media(max-width: 800px){
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+    #details-features h2{
+        margin-top: 5rem;
+        padding-bottom: 0;
+    } 
+    #details-designed{
+        padding: 20px;
+    }
+    #details-designed .container-designed{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .btn-main {
         display: block;
         margin: auto;
     }
-    .produto-text a{
-        text-decoration: none;
-    }
-    .produto-text h2 {
+
+    .product-details h2 {
         font-size: 50px;
     }
-    .recursos-img{
-        margin: 0px 20px;
-    }
-    .designed_text h2 {
+    .description h2 {
         font-size: 20px;
     }
-    .designed_text p {
+    .description p {
         font-size: 17px;
         line-height: 24px;
     }
-    .des {
-        gap: 50px;
-        margin: 10% 0%;
-    }
-    #designed, .apple {
-        padding: 0px;
-    }
-    .designed_text h2 {
+    .description h2 {
         line-height: 25px;
     }
-    .re{
+    .container-features{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    /* Grupo: Alterando direção */
-    .re, .des, .comit{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .box_re{
+    .review-box{
         border-bottom: 1px solid #3b40452c;
     }
     .designed-img {
         width: 100%;
     }
-    #recursos_conteudo {
+    #details-features {
         padding: 0px 20px;
     }
-    .designed_text {
+    .description {
         width: 80%;
     }
      /* Text Center */
-     .produto-text h2, .produto-text p, .designed_text p , .text p{
+     .product-details h2, .product-details p, .description p , .text p{
         text-align: center;
     }
 
 }
 @media(max-width: 600px){
-    header .menu nav ul{
+    header .menu nav ul :not(.btn-mobile){
         display: none;
     }
-    .menuMobile{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+    header .menu .btn-mobile{ 
+        display: block;
     }
     header  .menu nav ul{
         flex-direction: column;
@@ -389,19 +450,33 @@ footer{
         align-items: center;
         box-shadow: 0px 18px 15px rgb(0 0 0 / 23%);
     }
-}
-@media(max-width: 400px){
+    footer .footer-navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .menu{
+        margin: 0;
+    }
+    footer .menu ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #product .product-details h2 {
+        font-size: 50px;
+    }
     .designed-img img {
-        width: 80%;
-    }
-    .nav_bar_footer .menu nav ul{
-        padding: 0px;
-    }
-    .nav_bar_footer .menu {
-        margin: 0px;
-    }
-    .nav_bar_footer ul li a {
-        padding: 10px;
-        font-size: 16px;
+        width: 70%;
     }
 }
+/* END Responsividade */
+
+/* Animações */
+@keyframes moveFromLeft {
+    from {
+      margin-right: 400px; /* Começa fora da tela à esquerda */
+    }
+    to {
+        margin-right: 0px; /* Termina a 200px da esquerda (ajuste conforme necessário) */
+    }
+}
+/* END Animações */
