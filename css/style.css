@@ -461,6 +461,7 @@ footer .menu a:hover {
     }
     h2{
         font-size: 3rem !important;
+        text-align: center !important;
     }
     header .menu nav .btn-mobile{ 
         display: block;
@@ -494,8 +495,8 @@ footer .menu a:hover {
     .designed-img img {
         width: 70%;
     }
-    h2{
-        text-align: center !important;
+    #product .product-details p {
+        padding: 0 20px;
     }
 }
 /* END Responsividade */
