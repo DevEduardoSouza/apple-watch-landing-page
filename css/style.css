@@ -22,7 +22,7 @@ body{
     justify-content: space-between;
 }
 .hide{
-    display: none !important;
+    display: flex !important;
 }
 h2{
     color: var(--font-color-title);
@@ -465,8 +465,11 @@ footer .menu a:hover {
     header .menu nav .btn-mobile{ 
         display: block;
     }
+    header .menu nav .btn-mobile i{
+        font-size: 4rem;
+    }
     header .container .menu nav ul{
-        display: flex;
+        display: none;
         flex-direction: column;
         position: absolute;
         left: 0;
@@ -475,6 +478,7 @@ footer .menu a:hover {
         padding: 0px;
         align-items: center;
         box-shadow: 0px 18px 15px rgb(0 0 0 / 23%);
+        z-index: 101;
     }
     footer .footer-navbar {
         flex-direction: column;
