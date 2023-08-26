@@ -324,29 +324,42 @@ border-radius: 0%;
 }
 /* END Reviews */
 
-/* Whatsapp */
-#container-btn-whatsapp{
+/* Whatsapp and Back-top */
+#container-btn-backTop, #container-btn-whatsapp{
     position: fixed;
-    bottom: 20px;
     right: 20px;
 }
+#container-btn-backTop .content-backTop, 
 #container-btn-whatsapp .content-whatsapp{
     padding: 10px;
-    background-color: #25D366;
     border-radius: 50%;
     cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.129);
 }
+#container-btn-backTop .content-backTop a, 
 #container-btn-whatsapp .content-whatsapp a{
-    font-size: 30px;
+    font-size: 20px;
     text-decoration: none;
     color: #F4F4F4;
 }
-#container-btn-whatsapp .content-whatsapp i{
-}
+#container-btn-backTop .content-backTop:hover,
 #container-btn-whatsapp .content-whatsapp:hover{
     opacity: .9;
 }
-/* END Whatsapp */
+
+#container-btn-backTop{
+    bottom: 80px;
+}
+#container-btn-backTop .content-backTop{
+    background-color: var(--color-styled);
+}
+#container-btn-whatsapp{
+    bottom: 20px;
+}
+#container-btn-whatsapp .content-whatsapp{
+    background-color: #25D366;
+}
+/* END Whatsapp end back-top */
 
 /* Footer */
 footer {
