@@ -7,6 +7,9 @@
     --font-color-title: #3b4045;
     --font-main: 'Josefin Sans', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 html,body{
     font-size: 62.5%;
 }
